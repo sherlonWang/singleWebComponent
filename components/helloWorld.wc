@@ -1,0 +1,30 @@
+<template>
+    <div>
+        <p>Hello,  <slot></slot>.</p>
+    </div>
+</template>
+
+<style>
+    div {
+        cursor: pointer;
+        background: #20b4ff;
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+    }
+</style>
+
+<script>
+    export default { // 1
+        name: 'hello-world', // 2
+        onClick() { // 3
+            alert( `Don't touch me!` );
+        },
+        onMouseover(){
+            console.log("go away");
+        }
+    }
+</script>
